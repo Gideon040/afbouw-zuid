@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Footer() {
   return (
     <>
-      <footer className="bg-dark-navy py-24 px-8 md:px-16 relative overflow-hidden">
+      <footer className="bg-dark-navy py-16 md:py-24 px-6 md:px-16 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-[5px] bg-primary origin-left -skew-y-[2deg]" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1400px] mx-auto">
@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex flex-col gap-8">
             <Link href="/">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="AfbouwZuid" className="h-7 brightness-0 invert" />
+              <img src="/logo.png" alt="AfbouwZuid" className="h-5 brightness-0 invert" />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               Uw partner voor hoogwaardige afbouwprojecten. Van stucwerk tot complete interieurtransformaties.

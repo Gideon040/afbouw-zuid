@@ -87,7 +87,7 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="AfbouwZuid" className="h-7" />
+              <img src="/logo.png" alt="AfbouwZuid" className="h-5" />
             </Link>
 
             {/* Desktop nav */}

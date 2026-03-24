@@ -19,22 +19,22 @@ export default function OffertePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="pt-28 pb-16 px-8 md:px-16 bg-surface">
+      <section className="pt-28 pb-10 md:pb-16 px-6 md:px-16 bg-surface">
         <div className="max-w-[1280px] mx-auto">
-          <div className="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold tracking-[0.2em] uppercase skew-btn mb-6">
+          <div className="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold tracking-[0.2em] uppercase skew-btn mb-4 md:mb-6">
             <span className="skew-btn-content inline-block">Offerte Aanvragen</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none mb-6">
+          <h1 className="text-3xl md:text-6xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none mb-4 md:mb-6">
             Vraag gratis een<br /><span className="text-primary">offerte aan</span>
           </h1>
-          <p className="text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-on-surface-variant max-w-2xl leading-relaxed">
             Vul onderstaand formulier in en ontvang binnen 24 uur een vrijblijvende prijsopgave op maat. Geen verrassingen, transparante tarieven.
           </p>
         </div>
       </section>
 
       {/* ── FORM + SIDEBAR ── */}
-      <section className="pb-32 bg-surface px-8 md:px-16">
+      <section className="pb-16 md:pb-32 bg-surface px-6 md:px-16">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-16 items-start">
 
           {/* ── FORM ── */}
@@ -296,8 +296,8 @@ export default function OffertePage() {
       </section>
 
       {/* ── REVIEWS ── */}
-      <section className="py-32 bg-surface-container-low">
-        <div className="container mx-auto px-8">
+      <section className="py-16 md:py-32 bg-surface-container-low">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-24">
             <div className="lg:col-span-1">
               <div className="flex items-baseline gap-4 mb-4">
@@ -345,8 +345,8 @@ export default function OffertePage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8 max-w-4xl">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Veelgestelde vragen</span>
           <h2 className="text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-12">Over onze offertes</h2>
           <div className="space-y-6">

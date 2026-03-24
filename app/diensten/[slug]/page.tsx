@@ -66,14 +66,14 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* ── 1. HERO ── */}
-      <section className="min-h-[560px] pt-28 pb-20 px-8 md:px-16 bg-surface">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 space-y-6">
+      <section className="pt-28 pb-12 md:pb-20 px-6 md:px-16 bg-surface">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="flex-1 space-y-5 md:space-y-6">
           <div className="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold tracking-[0.2em] uppercase skew-btn">
             <span className="skew-btn-content inline-block">{dienst.category}</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none">
+          <h1 className="text-4xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none">
             {dienst.title.split(" ").map((word, i) => (
               <span key={i}>
                 {i === 0 ? word : <><br /><span className="text-primary">{word}</span></>}
@@ -81,14 +81,14 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
             ))}
           </h1>
 
-          <p className="text-lg text-on-surface-variant max-w-xl leading-relaxed">{dienst.excerpt}</p>
+          <p className="text-base md:text-lg text-on-surface-variant max-w-xl leading-relaxed">{dienst.excerpt}</p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
-            <Link href="/offerte" className="skew-btn bg-primary text-white px-8 py-4 shadow-xl shadow-primary/20 inline-block">
-              <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">GRATIS OFFERTE</span>
+          <div className="flex flex-wrap gap-3 md:gap-4 pt-2 md:pt-4">
+            <Link href="/offerte" className="skew-btn bg-primary text-white px-6 md:px-8 py-3 md:py-4 shadow-xl shadow-primary/20 inline-block">
+              <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-xs md:text-sm">Gratis offerte</span>
             </Link>
-            <Link href="/#projecten" className="skew-btn border-2 border-dark-navy text-dark-navy px-8 py-4 inline-block">
-              <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">BEKIJK PROJECTEN</span>
+            <Link href="/#projecten" className="skew-btn border-2 border-dark-navy text-dark-navy px-6 md:px-8 py-3 md:py-4 inline-block">
+              <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-xs md:text-sm">Bekijk projecten</span>
             </Link>
           </div>
 
@@ -134,7 +134,7 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 3. EXPLAINER ── */}
-      <section className="py-32 bg-white px-8 md:px-16 overflow-hidden">
+      <section className="py-16 md:py-32 bg-white px-6 md:px-16 overflow-hidden">
         <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-16 items-center">
           <div className="flex-1 space-y-8">
             <h2 className="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight">
@@ -174,7 +174,7 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 4. BENEFITS ── */}
-      <section className="relative py-32 px-8 md:px-16 overflow-hidden">
+      <section className="relative py-16 md:py-32 px-6 md:px-16 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="absolute inset-0 w-full h-full object-cover"
@@ -196,10 +196,10 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 5. WERKWIJZE ── */}
-      <section className="py-32 bg-white px-8 md:px-16">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-20">
+      <section className="py-16 md:py-32 bg-white px-6 md:px-16">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-12 md:gap-20">
           <div className="flex-1">
-            <h2 className="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-16">ONZE WERKWIJZE</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-10 md:mb-16">Onze werkwijze</h2>
             <div className="space-y-16 relative">
               <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-surface-container-high" />
               {dienst.steps.map((step, i) => (
@@ -215,7 +215,7 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
               ))}
             </div>
           </div>
-          <div className="flex-1 h-[600px]">
+          <div className="flex-1 h-[300px] md:h-[600px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={dienst.detailImage} alt="Werkwijze" className="w-full h-full object-cover hero-clip" />
           </div>
@@ -223,19 +223,19 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 6. GALLERY ── */}
-      <section className="py-32 bg-dark-navy text-white px-8 md:px-16 relative overflow-hidden">
+      <section className="py-16 md:py-32 bg-dark-navy text-white px-6 md:px-16 relative overflow-hidden">
         <div className="max-w-[1280px] mx-auto relative z-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold font-headline uppercase tracking-tighter text-center mb-16">HET RESULTAAT SPREEKT VOOR ZICH</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="md:col-span-2 h-96 overflow-hidden">
+          <h2 className="text-3xl md:text-5xl font-extrabold font-headline uppercase tracking-tighter text-center mb-10 md:mb-16">Het resultaat spreekt voor zich</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+            <div className="col-span-2 h-48 md:h-96 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="/echt-kamer-sierpleister-accentwand.webp" alt="Resultaat keuken" />
             </div>
-            <div className="h-96 overflow-hidden">
+            <div className="h-48 md:h-96 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="/echt-slaapkamer-groen-accentwand.webp" alt="Resultaat slaapkamer" />
             </div>
-            <div className="h-96 overflow-hidden">
+            <div className="h-48 md:h-96 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="/hal-gestuct-witte-trap.webp" alt="Resultaat hal" />
             </div>
@@ -258,10 +258,10 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 7. PRICING ── */}
-      <section className="py-32 bg-white px-8 md:px-16">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-20">
+      <section className="py-16 md:py-32 bg-white px-6 md:px-16">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row gap-12 md:gap-20">
           <div className="flex-1">
-            <h2 className="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-8">TRANSPARANTE TARIEVEN</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-6 md:mb-8">Transparante tarieven</h2>
             <p className="text-on-surface-variant mb-12">{dienst.pricingNote}</p>
             <div className="border-t border-surface-container-high">
               {dienst.pricing.map((p) => (
@@ -273,9 +273,9 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
           <div className="flex-1 flex flex-col justify-center">
-            <div className="bg-primary p-12 text-white skew-x-[-4deg]">
+            <div className="bg-primary p-8 md:p-12 text-white skew-x-[-4deg]">
               <div className="skew-x-[4deg] space-y-6">
-                <h3 className="text-3xl font-black font-headline uppercase leading-none">EXACTE PRIJS WETEN VOOR UW PROJECT?</h3>
+                <h3 className="text-xl md:text-3xl font-black font-headline uppercase leading-none">Exacte prijs weten voor uw project?</h3>
                 <p className="text-white/80">Vraag binnen 2 minuten een vrijblijvende offerte aan en ontvang binnen 24 uur een voorstel op maat.</p>
                 <Link href="/offerte" className="skew-btn bg-white text-primary px-8 py-4 w-full block text-center">
                   <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">BEREKEN UW PRIJS</span>
@@ -287,9 +287,9 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 8. RELATED SERVICES ── */}
-      <section className="py-32 bg-surface px-8 md:px-16">
+      <section className="py-16 md:py-32 bg-surface px-6 md:px-16">
         <div className="max-w-[1280px] mx-auto">
-          <h2 className="text-3xl font-black font-headline uppercase tracking-widest text-center mb-16">Andere afwerkingen</h2>
+          <h2 className="text-2xl md:text-3xl font-black font-headline uppercase tracking-widest text-center mb-10 md:mb-16">Andere afwerkingen</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {related.map((r, i) => (
               <Link key={r.slug} href={`/diensten/${r.slug}`} className={`relative aspect-[3/4] overflow-hidden group ${i === 1 ? "md:mt-12" : ""}`}>
@@ -306,11 +306,11 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 9. FAQ ── */}
-      <section className="py-32 bg-surface px-8 md:px-16">
-        <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <section className="py-16 md:py-32 bg-surface px-6 md:px-16">
+        <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Veelgestelde vragen</span>
-            <h2 className="text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-12">Alles wat u wilt weten</h2>
+            <h2 className="text-3xl md:text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-8 md:mb-12">Alles wat u wilt weten</h2>
             <div className="space-y-6">
               {dienst.faqs.map((faq, i) => (
                 <details key={i} className="group border-b border-outline-variant pb-6 cursor-pointer" {...(i === 0 ? { open: true } : {})}>
@@ -392,7 +392,7 @@ export default function DienstPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* ── 11. CONTACT CTA ── */}
-      <section id="contact" className="py-32 bg-surface overflow-hidden px-8 md:px-16">
+      <section id="contact" className="py-16 md:py-32 bg-surface overflow-hidden px-6 md:px-16">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Contact</span>

@@ -22,27 +22,27 @@ export default function RenovatiePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* ── 1. HERO ── */}
-      <section className="min-h-[560px] pt-28 pb-20 px-8 md:px-16 bg-surface">
-        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 space-y-6">
+      <section className="pt-28 pb-12 md:pb-20 px-6 md:px-16 bg-surface">
+        <div className="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="flex-1 space-y-5 md:space-y-6">
             <div className="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold tracking-[0.2em] uppercase skew-btn">
               <span className="skew-btn-content inline-block">Renovatie Afbouw</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none">
+            <h1 className="text-4xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none">
               Vakkundige<br /><span className="text-primary">Afwerking</span>
             </h1>
 
-            <p className="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+            <p className="text-base md:text-lg text-on-surface-variant max-w-xl leading-relaxed">
               Geef uw bestaande woning een compleet nieuw leven. Van wandherstel en stucwerk tot schilderwerk, vloeren en traprenovatie — alles uit één hand.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="/offerte" className="skew-btn bg-primary text-white px-8 py-4 shadow-xl shadow-primary/20 inline-block">
-                <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">Gratis offerte</span>
+            <div className="flex flex-wrap gap-3 md:gap-4 pt-2 md:pt-4">
+              <Link href="/offerte" className="skew-btn bg-primary text-white px-6 md:px-8 py-3 md:py-4 shadow-xl shadow-primary/20 inline-block">
+                <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-xs md:text-sm">Gratis offerte</span>
               </Link>
-              <Link href="/#projecten" className="skew-btn border-2 border-dark-navy text-dark-navy px-8 py-4 inline-block">
-                <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">Bekijk projecten</span>
+              <Link href="/#projecten" className="skew-btn border-2 border-dark-navy text-dark-navy px-6 md:px-8 py-3 md:py-4 inline-block">
+                <span className="skew-btn-content inline-block font-bold tracking-widest uppercase text-xs md:text-sm">Bekijk projecten</span>
               </Link>
             </div>
 
@@ -78,12 +78,12 @@ export default function RenovatiePage() {
       </div>
 
       {/* ── 3. INTRO ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-start">
             <div>
               <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Renovatie Specialist</span>
-              <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
+              <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-6 md:mb-8">
                 Uw bestaande woning verdient het beste
               </h2>
             </div>
@@ -104,7 +104,7 @@ export default function RenovatiePage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[280px] gap-3 px-3 mt-20" style={{ gridAutoFlow: "dense" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[180px] md:auto-rows-[280px] gap-2 md:gap-3 px-2 md:px-3 mt-12 md:mt-20" style={{ gridAutoFlow: "dense" }}>
             {(() => { const d = [...diensten]; [d[5], d[9]] = [d[9], d[5]]; return d; })().map((dienst, i) => {
               const isLarge = i === 0 || i === 4;
               return (
@@ -133,14 +133,14 @@ export default function RenovatiePage() {
       </section>
 
       {/* ── 5. WERKWIJZE ── */}
-      <section className="py-32 bg-surface-container-low overflow-hidden relative">
-        <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10">
+      <section className="py-16 md:py-32 bg-surface-container-low overflow-hidden relative">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Werkwijze</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
+            <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-6 md:mb-8">
               Uw renovatie in 4 heldere stappen
             </h2>
-            <p className="text-on-surface-variant text-lg mb-10 leading-relaxed max-w-xl">
+            <p className="text-on-surface-variant text-base md:text-lg mb-8 md:mb-10 leading-relaxed max-w-xl">
               Renoveren hoeft niet stressvol te zijn. Onze gestructureerde aanpak zorgt voor een soepel verloop, heldere communicatie en een resultaat dat uw verwachtingen overtreft.
             </p>
             <Link href="/offerte" className="skew-btn bg-primary text-white px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm inline-block">
@@ -178,9 +178,9 @@ export default function RenovatiePage() {
         />
         <div className="absolute inset-0 bg-dark-navy/80" />
 
-        <div className="container mx-auto px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="bg-primary p-12 md:p-24 shadow-2xl relative">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
+            <div className="bg-primary p-8 md:p-24 shadow-2xl relative">
               <div className="absolute top-0 left-0 w-24 h-24 border-t-8 border-l-8 border-white/20" />
               <h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-none">
                 Renovatie project laten afwerken?

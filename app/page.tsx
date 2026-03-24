@@ -47,7 +47,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
       {/* ── 1. HERO ── */}
-      <section className="relative min-h-[100svh] md:min-h-[560px] pt-32 pb-12 md:pb-20 px-6 md:px-16 overflow-hidden flex items-end">
+      <section className="relative min-h-[60svh] md:min-h-[560px] pt-24 pb-10 md:pt-32 md:pb-20 px-6 md:px-16 overflow-hidden flex items-end">
         <div className="absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -111,20 +111,20 @@ export default function HomePage() {
       </section>
 
       {/* ── 2. INTRO ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start mb-24">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-start mb-16 md:mb-24">
             <div>
               <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Meubels &amp; Interieur</span>
-              <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
+              <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
                 Vakmanschap in stucwerk, vloeren en meer
               </h2>
             </div>
             <div className="space-y-8">
-              <p className="text-lg text-on-surface-variant leading-relaxed">
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed">
                 Bij AfbouwZuid geloven we dat een woning pas echt een thuis wordt door de details. Onze passie ligt in het creëren van strakke wanden, naadloze plafonds en karaktervolle vloeren die jarenlang meegaan.
               </p>
-              <Link href="/over-ons" className="skew-btn border-2 border-dark-navy text-dark-navy px-8 py-3 font-headline font-bold uppercase tracking-widest text-sm inline-block">
+              <Link href="/over-ons" className="skew-btn border-2 border-dark-navy text-dark-navy px-6 md:px-8 py-3 font-headline font-bold uppercase tracking-widest text-xs md:text-sm inline-block">
                 <span>Meer over ons</span>
               </Link>
             </div>
@@ -167,23 +167,23 @@ export default function HomePage() {
       </div>
 
       {/* ── 5. NIEUWBOUW vs RENOVATIE ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/nieuwbouw" className="group relative overflow-hidden aspect-square">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <Link href="/nieuwbouw" className="group relative overflow-hidden aspect-[4/3] md:aspect-square">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/nieuwbouw-casco-stucwerk.webp" alt="Nieuwbouw" />
             <div className="absolute inset-0 bg-dark-navy/20 group-hover:bg-dark-navy/40 transition-colors" />
-            <div className="absolute bottom-12 left-12">
-              <h3 className="text-5xl font-headline font-black text-white uppercase tracking-tighter mb-4">Nieuwbouw</h3>
+            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
+              <h3 className="text-3xl md:text-5xl font-headline font-black text-white uppercase tracking-tighter mb-4">Nieuwbouw</h3>
               <div className="w-12 h-1 bg-primary transform group-hover:w-24 transition-all" />
             </div>
           </Link>
-          <Link href="/renovatie" className="group relative overflow-hidden aspect-square md:mt-16">
+          <Link href="/renovatie" className="group relative overflow-hidden aspect-[4/3] md:aspect-square md:mt-16">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/echt-renovatie-kamer-rolluiken.webp" alt="Renovatie" />
             <div className="absolute inset-0 bg-dark-navy/20 group-hover:bg-dark-navy/40 transition-colors" />
-            <div className="absolute bottom-12 left-12">
-              <h3 className="text-5xl font-headline font-black text-white uppercase tracking-tighter mb-4">Renovatie</h3>
+            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
+              <h3 className="text-3xl md:text-5xl font-headline font-black text-white uppercase tracking-tighter mb-4">Renovatie</h3>
               <div className="w-12 h-1 bg-primary transform group-hover:w-24 transition-all" />
             </div>
           </Link>
@@ -191,18 +191,18 @@ export default function HomePage() {
       </section>
 
       {/* ── 6. CTA - PLAN ADVIESGESPREK ── */}
-      <section id="werkwijze" className="py-32 bg-surface-container-low overflow-hidden relative">
-        <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10">
+      <section id="werkwijze" className="py-16 md:py-32 bg-surface-container-low overflow-hidden relative">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center relative z-10">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Persoonlijk Contact</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
+            <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-6 md:mb-8">
               Zullen we uw plannen bespreken?
             </h2>
-            <p className="text-on-surface-variant text-lg mb-10 leading-relaxed max-w-xl">
+            <p className="text-on-surface-variant text-base md:text-lg mb-8 md:mb-10 leading-relaxed max-w-xl">
               Een afspraak is bij ons altijd vrijblijvend. We luisteren naar uw wensen, bekijken de mogelijkheden en geven u een eerlijk advies over de beste afwerking voor uw ruimte.
             </p>
-            <div className="flex items-center gap-8">
-              <Link href="/offerte" className="skew-btn bg-dark-navy text-white px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm inline-block">
+            <div className="flex flex-wrap items-center gap-6 md:gap-8">
+              <Link href="/offerte" className="skew-btn bg-dark-navy text-white px-8 md:px-10 py-3 md:py-4 font-headline font-bold uppercase tracking-widest text-xs md:text-sm inline-block">
                 <span>Afspraak plannen</span>
               </Link>
               <div className="flex items-center gap-2">
@@ -246,10 +246,10 @@ export default function HomePage() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-dark-navy/85" />
 
-        <div className="container mx-auto px-8 relative z-10">
-          <div className="mb-16">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
+          <div className="mb-12 md:mb-16">
             <span className="text-sky-400 font-bold uppercase tracking-[0.3em] text-xs block mb-4">Onze Expertise</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-black text-white uppercase tracking-tighter leading-none">Stucwerk van de hoogste plank</h2>
+            <h2 className="text-3xl md:text-6xl font-headline font-black text-white uppercase tracking-tighter leading-none">Stucwerk van de hoogste plank</h2>
           </div>
           <div className="divide-y divide-white/15">
             {[
@@ -283,18 +283,18 @@ export default function HomePage() {
             <img className="w-full h-full object-cover absolute inset-0" src="/dienst-ambachtelijk-schilderwerk.webp" alt="Schilderwerk" />
             <div className="absolute inset-0 bg-dark-navy/10" />
           </div>
-          <div className="p-16 md:p-24 flex flex-col justify-center">
+          <div className="p-8 md:p-24 flex flex-col justify-center">
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-4">Service 01</span>
-            <h3 className="text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-6">Ambachtelijk Schilderwerk</h3>
+            <h3 className="text-2xl md:text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-6">Ambachtelijk Schilderwerk</h3>
             <p className="text-on-surface-variant mb-8 leading-relaxed max-w-lg">Wij combineren traditionele technieken met moderne materialen voor een duurzaam en esthetisch resultaat. Of het nu gaat om kozijnen, deuren of wanden.</p>
             <div className="flex gap-4">
               <span className="bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary border border-primary/20">Binnen</span>
               <span className="bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary border border-primary/20">Buiten</span>
             </div>
           </div>
-          <div className="order-last lg:order-none p-16 md:p-24 flex flex-col justify-center lg:text-right lg:items-end">
+          <div className="order-last lg:order-none p-8 md:p-24 flex flex-col justify-center lg:text-right lg:items-end">
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs mb-4">Service 02</span>
-            <h3 className="text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-6">Latexspuiten</h3>
+            <h3 className="text-2xl md:text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-6">Latexspuiten</h3>
             <p className="text-on-surface-variant mb-8 leading-relaxed max-w-lg">De modernste manier om grote oppervlakken egaal en strak te voorzien van kleur. Sneller en strakker dan traditioneel rollen.</p>
             <div className="flex gap-4 lg:flex-row-reverse">
               <span className="bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary border border-primary/20">High-End</span>
@@ -310,26 +310,26 @@ export default function HomePage() {
       </section>
 
       {/* ── 9. OVERIGE DIENSTEN - VLOER & TRAP ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="group relative h-[600px] overflow-hidden">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="group relative h-[400px] md:h-[600px] overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/vloeren-visgraat-parket.webp" alt="Vloerbedekking" />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/80 via-transparent to-transparent" />
-            <div className="absolute bottom-12 left-12 right-12">
-              <h3 className="text-4xl font-headline font-black text-white uppercase tracking-tighter mb-2">Vloerbedekking</h3>
+            <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12">
+              <h3 className="text-2xl md:text-4xl font-headline font-black text-white uppercase tracking-tighter mb-2">Vloerbedekking</h3>
               <p className="text-slate-300 text-sm mb-6 max-w-sm">Van PVC tot tapijt, wij zorgen voor een perfect gelegde vloer die past bij uw interieur.</p>
               <Link href="/diensten/vloerbedekking" className="skew-btn bg-white text-dark-navy px-8 py-3 font-headline font-bold uppercase tracking-widest text-xs inline-block">
                 <span>Ontdek vloeren</span>
               </Link>
             </div>
           </div>
-          <div className="group relative h-[600px] overflow-hidden md:mt-16">
+          <div className="group relative h-[400px] md:h-[600px] overflow-hidden md:mt-16">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/dienst-trap-schilderen.webp" alt="Traprenovatie" />
             <div className="absolute inset-0 bg-gradient-to-t from-dark-navy/80 via-transparent to-transparent" />
-            <div className="absolute bottom-12 left-12 right-12">
-              <h3 className="text-4xl font-headline font-black text-white uppercase tracking-tighter mb-2">Traprenovatie</h3>
+            <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 md:right-12">
+              <h3 className="text-2xl md:text-4xl font-headline font-black text-white uppercase tracking-tighter mb-2">Traprenovatie</h3>
               <p className="text-slate-300 text-sm mb-6 max-w-sm">Geef uw trap een tweede leven met onze duurzame en stijlvolle renovatieoplossingen.</p>
               <Link href="/diensten/trap-schilderen" className="skew-btn bg-white text-dark-navy px-8 py-3 font-headline font-bold uppercase tracking-widest text-xs inline-block">
                 <span>Ontdek trappen</span>
@@ -340,12 +340,12 @@ export default function HomePage() {
       </section>
 
       {/* ── 10. ALLES ONDER ÉÉN DAK ── */}
-      <section id="over-ons" className="py-32 bg-surface-container overflow-hidden">
-        <div className="container mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+      <section id="over-ons" className="py-16 md:py-32 bg-surface-container overflow-hidden">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
             <div>
               <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Onze Missie</span>
-              <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8">
+              <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-6 md:mb-8">
                 Alles onder één dak voor uw afwerking
               </h2>
               <p className="text-on-surface-variant text-lg mb-10 leading-relaxed">
@@ -383,11 +383,11 @@ export default function HomePage() {
       </section>
 
       {/* ── 11. PROJECTEN ── */}
-      <section id="projecten" className="py-32 bg-surface overflow-hidden">
-        <div className="container mx-auto px-8 flex justify-between items-end mb-16">
+      <section id="projecten" className="py-16 md:py-32 bg-surface overflow-hidden">
+        <div className="container mx-auto px-6 md:px-8 flex justify-between items-end mb-12 md:mb-16">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Portfolio</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none">Realisaties</h2>
+            <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none">Realisaties</h2>
           </div>
           <a className="hidden md:flex items-center gap-4 group" href="#">
             <span className="text-xs font-bold uppercase tracking-widest text-dark-navy">Bekijk alle projecten</span>
@@ -417,9 +417,9 @@ export default function HomePage() {
       </section>
 
       {/* ── 12. REVIEWS ── */}
-      <section className="py-32 bg-surface-container-low">
-        <div className="container mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-24">
+      <section className="py-16 md:py-32 bg-surface-container-low">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-16 mb-16 md:mb-24">
             <div className="lg:col-span-1">
               <div className="flex items-baseline gap-4 mb-4">
                 <span className="text-7xl font-headline font-black text-dark-navy">9.7</span>
@@ -448,7 +448,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
               { name: "Alexis Barron", text: "\"Deze mannen hadden 2 dagen tijd om een hele flat te behangen en het plafond te schilderen. Het ziet er echt super uit. Fijne samenwerking met goede communicatie!!\"" },
               { name: "Marlie S", text: "\"Dichte trap boven en onder laten schilderen inclusief kitwerk. Super snelle service (1 week na aanvraag was het al af). Fijne communicatie vooraf. Vriendelijk personeel en netjes gewerkt.\"" },
@@ -477,7 +477,7 @@ export default function HomePage() {
       </section>
 
       {/* ── 14. CTA - OFFERTE ── */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-16 md:py-32 overflow-hidden">
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -488,9 +488,9 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-dark-navy/80" />
 
-        <div className="container mx-auto px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-            <div className="bg-primary p-12 md:p-24 shadow-2xl relative">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
+            <div className="bg-primary p-8 md:p-24 shadow-2xl relative">
               <div className="absolute top-0 left-0 w-24 h-24 border-t-8 border-l-8 border-white/20" />
               <h2 className="text-4xl md:text-5xl font-headline font-black text-white uppercase tracking-tighter mb-8 leading-none">
                 Klaar voor een perfecte afwerking?
@@ -519,11 +519,11 @@ export default function HomePage() {
       </section>
 
       {/* ── 15. FAQ ── */}
-      <section className="py-32 bg-surface">
-        <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <section className="py-16 md:py-32 bg-surface">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Veelgestelde vragen</span>
-            <h2 className="text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-12">Alles wat u wilt weten</h2>
+            <h2 className="text-3xl md:text-4xl font-headline font-black text-dark-navy uppercase tracking-tighter mb-8 md:mb-12">Alles wat u wilt weten</h2>
             <div className="space-y-6">
               <details className="group border-b border-outline-variant pb-6 cursor-pointer" open>
                 <summary className="flex justify-between items-center list-none [&::-webkit-details-marker]:hidden">
@@ -597,11 +597,11 @@ export default function HomePage() {
       */}
 
       {/* ── 17. CONTACT ── */}
-      <section id="contact" className="py-32 bg-surface overflow-hidden">
-        <div className="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24">
+      <section id="contact" className="py-16 md:py-32 bg-surface overflow-hidden">
+        <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24">
           <div>
             <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs block mb-4">Contact</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-12">Neem contact met ons op</h2>
+            <h2 className="text-3xl md:text-6xl font-headline font-black text-dark-navy uppercase tracking-tighter leading-none mb-8 md:mb-12">Neem contact met ons op</h2>
             <form action="https://formspree.io/f/mnjoajqz" method="POST" className="space-y-8">
               <input type="hidden" name="_subject" value="Contactformulier Homepage" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
