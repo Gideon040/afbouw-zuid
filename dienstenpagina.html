@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html class="light" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Traditioneel Stucwerk | AfbouwZuid Premium Wandafwerking</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#a16900",
+                        "primary-container": "#0070ec",
+                        "surface-dim": "#dcdad5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0ede8",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fcf9f4",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f3f0eb",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-tertiary-fixed": "#291800",
+                        "tertiary": "#805200",
+                        "secondary-container": "#d5e0f9",
+                        "on-secondary-fixed-variant": "#3d475b",
+                        "on-surface": "#1c1c19",
+                        "on-background": "#1c1c19",
+                        "on-tertiary-fixed-variant": "#633f00",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f4",
+                        "surface-variant": "#e5e2dd",
+                        "surface-container-high": "#ebe8e3",
+                        "secondary-fixed-dim": "#bcc7df",
+                        "surface-tint": "#005ac2",
+                        "surface-container-low": "#f6f3ee",
+                        "primary": "#0058bd",
+                        "background": "#fcf9f4",
+                        "on-secondary-fixed": "#111c2e",
+                        "on-surface-variant": "#414755",
+                        "secondary-fixed": "#d8e3fc",
+                        "on-primary-fixed-variant": "#004494",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#adc6ff",
+                        "primary-fixed": "#d8e2ff",
+                        "inverse-surface": "#31302d",
+                        "on-primary-container": "#fefcff",
+                        "tertiary-fixed": "#ffddb4",
+                        "outline": "#717786",
+                        "surface-container-highest": "#e5e2dd",
+                        "tertiary-fixed-dim": "#ffb955",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary": "#545f74",
+                        "outline-variant": "#c1c6d7",
+                        "on-secondary-container": "#586378",
+                        "on-primary-fixed": "#001a41"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .skew-btn { transform: skewX(-12deg); }
+        .skew-btn-content { transform: skewX(12deg); }
+        .diagonal-bg { clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); }
+        .hero-clip { clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Header / TopNavBar (Shared Component JSON Mapping) -->
+<header class="fixed top-0 left-0 right-0 z-50 px-6 py-3 flex items-center justify-between bg-white/80 dark:bg-slate-900/80 backdrop-blur-md rounded-full mt-6 mx-auto max-w-5xl border border-white/20 shadow-[0_20_50px_rgba(11,22,40,0.05)]">
+<div class="text-xl font-black text-[#0b1628] dark:text-white Manrope">AfbouwZuid</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-bold tracking-wider uppercase text-xs Manrope text-[#0058bd] border-b-2 border-[#0058bd] pb-1 hover:scale-105 transition-transform duration-300" href="#">Diensten</a>
+<a class="font-bold tracking-wider uppercase text-xs Manrope text-[#0b1628] dark:text-slate-300 hover:text-[#0058bd] hover:scale-105 transition-transform duration-300" href="#">Werkwijze</a>
+<a class="font-bold tracking-wider uppercase text-xs Manrope text-[#0b1628] dark:text-slate-300 hover:text-[#0058bd] hover:scale-105 transition-transform duration-300" href="#">Projecten</a>
+<a class="font-bold tracking-wider uppercase text-xs Manrope text-[#0b1628] dark:text-slate-300 hover:text-[#0058bd] hover:scale-105 transition-transform duration-300" href="#">Over ons</a>
+</nav>
+<button class="bg-[#0058bd] text-white px-6 py-2 skew-btn hover:skew-x-[-15deg] transition-all duration-300">
+<span class="skew-btn-content inline-block font-bold tracking-wider uppercase text-xs">Offerte aanvragen</span>
+</button>
+</header>
+<!-- 1. HERO SECTION -->
+<section class="min-h-[716px] pt-32 pb-24 px-8 md:px-16 flex flex-col md:flex-row items-center gap-12 bg-surface">
+<div class="flex-1 space-y-6">
+<nav class="flex items-center space-x-2 text-xs font-medium text-outline">
+<span>Home</span>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span>Diensten</span>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary">Traditioneel Stucwerk</span>
+</nav>
+<div class="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold tracking-[0.2em] uppercase skew-btn">
+<span class="skew-btn-content inline-block">WAND &amp; PLAFOND AFWERKING</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline tracking-tighter text-on-surface uppercase leading-none">
+                TRADITIONEEL <br/> <span class="text-primary">STUCWERK</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                Transformeer uw woning met de tijdloze elegantie van handmatig aangebracht stucwerk. Onze meesters creëren de perfecte basis voor elk hoogwaardig interieur.
+            </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-white px-8 py-4 skew-btn hover:scale-105 transition-transform duration-300 shadow-xl shadow-primary/20">
+<span class="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">GRATIS OFFERTE</span>
+</button>
+<button class="border-2 border-on-primary-fixed text-on-primary-fixed px-8 py-4 skew-btn hover:bg-on-primary-fixed hover:text-white transition-all duration-300">
+<span class="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">BEKIJK PROJECTEN</span>
+</button>
+</div>
+<div class="flex items-center space-x-2 pt-4">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-bold text-on-surface">9.7</span>
+<span class="text-outline text-sm">klanttevredenheid op basis van 240+ reviews</span>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="relative w-full aspect-[4/3] bg-surface-container-highest hero-clip overflow-hidden">
+<img alt="Luxurious finished interior with smooth white walls" class="w-full h-full object-cover" data-alt="Modern bright living room with perfectly smooth plastered white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsr-cFXtQj75nwMkRE9DS_8hQWBLFTCTAmMrIO2tZLL1WtMkXIhPiV__w68XTYGqMw63DsCncTSsa_jMsOfZWjcGIVEFoL6KXjBtpHod4qXHau7xI5EPL6iQv38V0niG1OKsa85XVP0YUVozUjS1mGqX2m7coxurudqG7OdLMy92CnHCEPzc8ARbSNQf-ewAmZkkKqjlkVE_Aq9v3dYqo1p2GnzSsLM8QeRxOHdmsI_2pOvl3wtvWdyhI0ba_AwyVUxVsND5ssuA-v"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-2xl hidden md:block">
+<p class="font-headline font-black text-3xl text-primary leading-tight">15+</p>
+<p class="text-[10px] font-bold uppercase tracking-widest text-outline">JAAR ERVARING</p>
+</div>
+</div>
+</section>
+<!-- 2. TRUST BAR -->
+<section class="bg-white py-12 border-y border-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified_user</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">15+ JAAR ERVARING</p>
+<p class="text-[11px] text-outline uppercase font-medium">Meester stukadoors</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary text-3xl">straighten</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">GRATIS INMETING</p>
+<p class="text-[11px] text-outline uppercase font-medium">Advies op locatie</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary text-3xl">payments</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">VASTE PRIJS</p>
+<p class="text-[11px] text-outline uppercase font-medium">Geen verrassingen</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-wider">100% GARANTIE</p>
+<p class="text-[11px] text-outline uppercase font-medium">Op al ons werk</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. EXPLAINER -->
+<section class="py-32 bg-white px-8 md:px-16 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 space-y-8">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight">Wat is traditioneel stucwerk?</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>Traditioneel stucwerk is het ambachtelijk vlakmaken van muren en plafonds met behulp van gipsmortel. Dit proces wordt volledig met de hand uitgevoerd door onze ervaren vakmensen, wat zorgt voor een ongekende precisie en afwerkingsniveau.</p>
+<p>Of het nu gaat om het herstellen van oude muren in een renovatieproject of het realiseren van een strakke, moderne look in een nieuwbouwwoning; traditioneel stucwerk vormt de perfecte basis voor elke verdere wandafwerking zoals sauswerk of behang.</p>
+</div>
+<div class="pt-4 border-l-4 border-primary pl-6">
+<p class="italic text-on-surface font-medium text-xl">"Kwaliteit zit in de details die je niet ziet, maar wel voelt in de sfeer van de ruimte."</p>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="bg-surface-container-low aspect-[4/5] skew-x-[-2deg] overflow-hidden">
+<img alt="Detailed shot of smooth white wall in sunlight" class="w-full h-full object-cover scale-110" data-alt="Close up of a bright minimalist room with soft sunlight hitting smooth white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABOmUhvQGLIQ7-LQcZImXs2MVjwV8ilD1aK0x3eazNk_ljZwDzKuwpDk0t8JA-d7uMf0cPQEHqrl7SiCynU0WdlpTU8ahFCb6EiyKMXx4xDuzp3vyipQ3sm4mfP51MpCNZN4u9HRUn1Xc1ziRAuCYGXUyDsn3M35370qfyx948ImLlov9wF0T7HDk3PoWaPYpC_3YcYEvZXJgl_CijfoR-tuTXTixpk0dnJw20mOwpX_ET9kf-SjdQBQ-Pe7aArxtDfY5DGDCmT09a"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. BENEFITS -->
+<section class="py-32 bg-surface px-8 md:px-16">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">history</span>
+<h3 class="text-xl font-black font-headline uppercase tracking-widest text-on-surface">TIJDLOOS</h3>
+<p class="text-on-surface-variant leading-relaxed">Een afwerking die nooit uit de mode raakt. Strak, sereen en passend bij elke interieurstijl van klassiek tot industrieel.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">charging_station</span>
+<h3 class="text-xl font-black font-headline uppercase tracking-widest text-on-surface">PERFECTE BASIS</h3>
+<p class="text-on-surface-variant leading-relaxed">De ideale ondergrond voor sauswerk. Geen oneffenheden, alleen pure perfectie tot in de kleinste hoekjes.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h3 class="text-xl font-black font-headline uppercase tracking-widest text-on-surface">ELK PROJECT</h3>
+<p class="text-on-surface-variant leading-relaxed">Geschikt voor zowel complexe renovaties als strakke nieuwbouw. Wij passen onze techniek aan op uw specifieke wandtype.</p>
+</div>
+</div>
+</section>
+<!-- 5. PROCESS -->
+<section class="py-32 bg-white px-8 md:px-16">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="flex-1">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-16">ONZE WERKWIJZE</h2>
+<div class="space-y-16 relative">
+<div class="absolute left-6 top-0 bottom-0 w-0.5 bg-surface-container-high"></div>
+<div class="relative flex items-start space-x-12">
+<div class="bg-primary text-white w-12 h-12 flex items-center justify-center font-bold text-xl skew-btn z-10 shrink-0">
+<span class="skew-btn-content">01</span>
+</div>
+<div>
+<h4 class="text-lg font-bold uppercase tracking-widest mb-2">VOORBEREIDING</h4>
+<p class="text-on-surface-variant">Afplakken van vloeren en kozijnen en het aanbrengen van de juiste primer voor optimale hechting.</p>
+</div>
+</div>
+<div class="relative flex items-start space-x-12">
+<div class="bg-primary text-white w-12 h-12 flex items-center justify-center font-bold text-xl skew-btn z-10 shrink-0">
+<span class="skew-btn-content">02</span>
+</div>
+<div>
+<h4 class="text-lg font-bold uppercase tracking-widest mb-2">GIPS AANBRENGEN</h4>
+<p class="text-on-surface-variant">De gipsmortel wordt handmatig en gelijkmatig verdeeld over de wanden door onze meester-stukadoors.</p>
+</div>
+</div>
+<div class="relative flex items-start space-x-12">
+<div class="bg-primary text-white w-12 h-12 flex items-center justify-center font-bold text-xl skew-btn z-10 shrink-0">
+<span class="skew-btn-content">03</span>
+</div>
+<div>
+<h4 class="text-lg font-bold uppercase tracking-widest mb-2">RECHT TREKKEN</h4>
+<p class="text-on-surface-variant">Met reien en messen wordt het gips volledig waterpas en strak getrokken voor een naadloos resultaat.</p>
+</div>
+</div>
+<div class="relative flex items-start space-x-12">
+<div class="bg-primary text-white w-12 h-12 flex items-center justify-center font-bold text-xl skew-btn z-10 shrink-0">
+<span class="skew-btn-content">04</span>
+</div>
+<div>
+<h4 class="text-lg font-bold uppercase tracking-widest mb-2">AFWERKEN</h4>
+<p class="text-on-surface-variant">Na het 'aantrekken' volgt het sponzen en pleisteren tot de wand spiegelglad is (Sausklaar).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 h-[600px]">
+<img alt="Craftsman applying plaster to a wall" class="w-full h-full object-cover hero-clip" data-alt="Professional craftsman focusing on smoothing a large white wall in a high-end interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaap_AhdSjBp3AiAQWdLx_awyIfjW-Ht9bNzLBXy-mKMl0DFnub_i9aMARNWBku3N4awpXM8nYJoBwd8aJ_WEYAUJJ05Nj3Ylgb67HQxt7N7VfPWaGHTe1MHer6-cxvGJCzMgxtWFNxF3ZuDoZyMOXRODIQQy7XX0PzMpQ1mgpu1TQ3SZtcGqGkP4k4w2f4UtO-5jo7yWK_nkmThERmrK-o6DV2OKwd0RzjNkYJ7hXA9HtQ4IAPRG-zeAz2SJvum0dadrB8uUFlWBY"/>
+</div>
+</div>
+</section>
+<!-- 6. GALLERY -->
+<section class="py-32 bg-[#0b1628] text-white px-8 md:px-16 relative overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold font-headline uppercase tracking-tighter text-center mb-16">HET RESULTAAT SPREEKT VOOR ZICH</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="md:col-span-2 h-96 overflow-hidden">
+<img alt="Stucco result kitchen" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Bright modern kitchen with perfectly smooth white walls and designer lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQ0YDL-0J5qyNSQnePJT7lNKkE23hea6kY0lP4L1ljwVBdEUcPHBdwwQCsQksJaDY4ADyWic3lpevWyMtNM3DHKg6Djeq6KQaXQ51kyrZrf5NypCYe0lgSKrfje-FGHFk8MfvUGAVfzt7VWT7umLmP1Xhg4dvmbU1GCpINhEzIzz54W-rt_Ssk-dXF7_kkhfFrpKeIkAOnWJWBiA7GEdIg_Nr8DkxqmqYxw-EGdZUcABEpF7ZRqTT0Rlbi4Dd0Vgyo-vxFVVLPJ7C"/>
+</div>
+<div class="h-96 overflow-hidden">
+<img alt="Stucco result bedroom" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Minimalist bedroom with clean lines and smooth plaster finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCY9osfdVivrbXz3YKvqv0OtSOuEcm75BKx1zCE_4M5o7kL7ZdKX0l5hn_f2TR5olVsNpClRAUJeb5npAUsqsu_v4g2Tq0tiQfHQAnNO7dvk_01RepGtiezxXUpGvVnlpf7K7UAydN1yqV_dF-y4A-4yugzCaOVTRCSqPt8NdvICUNS8s7TC42U39QxUX6GtR4dQoIu4uHouEdiIF9F6YoorwMaISx2i6UzIIGjlWKdOyh-wWYAJOw7OoSy7cwi1MDls_2-JICmqRf"/>
+</div>
+<div class="h-96 overflow-hidden">
+<img alt="Stucco result hallway" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" data-alt="Modern hallway showing the precision of corner finishing in plasterwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI2mUh3ZKmHphnjkPHmrBdRzuNp2TxVbj1Qchx9618NZJ0ZvhXnnflX_3Mf5cX2n9RgDjSIjpUf--gu-xy1eI-lE_vS8yBCI6TB4K7HUHstmEo04GxOw2OhrX34pxRQHxwBh5nzNxbmmL6YJbIUeNKcvW2cGm-kCfD9VW1SdQfQAgOLWboNybjuJj2rA5P3W4L3-YPbLSsLzo4dHoaPKEqs1rVdJJqMgV5GDKFxb1-vTVGsI84wGt4oUwoLPoeUmJyqhCR7w0T2dMJ"/>
+</div>
+</div>
+<div class="mt-12 md:max-w-lg mx-auto bg-white p-8 text-on-surface skew-x-[-4deg]">
+<div class="skew-x-[4deg]">
+<div class="flex text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic font-medium mb-4 leading-relaxed">"AfbouwZuid heeft onze hele benedenverdieping gestuct. Het resultaat is echt waanzinnig strak, we hoefden bijna niet meer te schuren voor het sausen."</p>
+<p class="font-bold uppercase tracking-widest text-sm">— FAMILIE DE VRIES, EINDHOVEN</p>
+</div>
+</div>
+</div>
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
+</section>
+<!-- 7. PRICING -->
+<section class="py-32 bg-white px-8 md:px-16">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="flex-1">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight mb-8">TRANSPARANTE TARIEVEN</h2>
+<p class="text-on-surface-variant mb-12">Onze prijzen zijn gebaseerd op de oppervlakte en het type ondergrond. Inclusief alle materialen en voorrijkosten.</p>
+<div class="border-t border-surface-container-high">
+<div class="py-6 flex justify-between items-center border-b border-surface-container-high hover:bg-surface transition-colors px-4">
+<span class="font-bold text-lg">Wandafwerking (Sausklaar)</span>
+<span class="text-primary font-black text-xl">vanaf € 18,- <span class="text-xs text-outline font-normal">/ m²</span></span>
+</div>
+<div class="py-6 flex justify-between items-center border-b border-surface-container-high hover:bg-surface transition-colors px-4">
+<span class="font-bold text-lg">Plafondafwerking (Sausklaar)</span>
+<span class="text-primary font-black text-xl">vanaf € 22,- <span class="text-xs text-outline font-normal">/ m²</span></span>
+</div>
+<div class="py-6 flex justify-between items-center border-b border-surface-container-high hover:bg-surface transition-colors px-4">
+<span class="font-bold text-lg">Dunpleister (Nieuwbouw)</span>
+<span class="text-primary font-black text-xl">vanaf € 12,- <span class="text-xs text-outline font-normal">/ m²</span></span>
+</div>
+<div class="py-6 flex justify-between items-center border-b border-surface-container-high hover:bg-surface transition-colors px-4">
+<span class="font-bold text-lg">Raapwerk (Grote oneffenheden)</span>
+<span class="text-primary font-black text-xl">vanaf € 25,- <span class="text-xs text-outline font-normal">/ m²</span></span>
+</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<div class="bg-primary p-12 text-white skew-x-[-4deg]">
+<div class="skew-x-[4deg] space-y-6">
+<h3 class="text-3xl font-black font-headline uppercase leading-none">EXACTE PRIJS WETEN VOOR UW PROJECT?</h3>
+<p class="text-white/80">Vraag binnen 2 minuten een vrijblijvende offerte aan en ontvang binnen 24 uur een voorstel op maat.</p>
+<button class="bg-white text-primary px-8 py-4 w-full skew-btn hover:scale-105 transition-transform duration-300">
+<span class="skew-btn-content inline-block font-bold tracking-widest uppercase text-sm">BEREKEN UW PRIJS</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. RELATED SERVICES -->
+<section class="py-32 bg-surface px-8 md:px-16">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-black font-headline uppercase tracking-widest text-center mb-16">ANDERE AFWERKINGEN</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white border border-surface-container-high hover:shadow-2xl transition-all group">
+<div class="h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Spackspuitwerk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Textured white wall showing professional spack finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE00qLAS6tgJTJYWbBRVmk2dgTq-I9ZxB2hEnsHXh-mu0IvdUfF_08oBGSAlSP7-qC5ES0eNkm7THY182zLEaZtYiZrmo2rgNEgw4k8MN9d8Ekffqli8NpoAT8D4jNAFWXzG4qDZvdABucdJXEOMtH090GP3RtCdMS_QrhjxpamccElHImLtE1NSipo6gzm_IVk4XX8uVxmtACCbyK4chLJX2uA3RLJSTFvlXY163Hc41IlPMFey3UCXHPbB4qT40HPNh--55VP6C2"/>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="font-bold text-xl uppercase tracking-wider">SPACKSPUITWERK</h4>
+<p class="text-on-surface-variant text-sm">Snel en voordelig wanden en plafonds voorzien van een korrelstructuur.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs tracking-widest uppercase group-hover:translate-x-2 transition-transform" href="#">
+                            MEER INFO <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-white border border-surface-container-high hover:shadow-2xl transition-all group">
+<div class="h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Dunpleister" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Extremely smooth wall in a minimalist white apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhJcmsQsPL5ifdcIEygTvNRRdDmYUX7W09XcC_H1hd_wGSJdcsbTd54OlCa6gcZRgFu2xpN-gESxKwh2DRIppFUQ1LTA2PvWTxJjyVf8ApmESDT25lYHuRbU6DrJ5r3dbZ341Ys5Rhyc5VJ8lEEnbEalXtzJBqydB_Fm3QOeYba7Og0MV95rYpodILJDraVTp_9aO1djc2sRIvSx4R7vM2QdMrWF-i_Zzz-YIhz5K1F8fcbUHaF4DXSpzcizFFa1bEkmxTYyNfeo6I"/>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="font-bold text-xl uppercase tracking-wider">DUNPLEISTER</h4>
+<p class="text-on-surface-variant text-sm">De perfecte oplossing voor nieuwbouwwoningen met behangklare wanden.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs tracking-widest uppercase group-hover:translate-x-2 transition-transform" href="#">
+                            MEER INFO <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-white border border-surface-container-high hover:shadow-2xl transition-all group">
+<div class="h-48 overflow-hidden bg-surface-container-highest">
+<img alt="Renovlies" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Beautiful living room with flawless white wallpapered walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBygEhYKJxMbVRQtrIkOt7CGq4xRtQHmbOrckvGAfzDLk0KO1tpvh9YWo13dFcEj6njQ5hs-H8Vz5fWmL_a4uG_sC81p17iPEefvPwe53cayn8G2PzbNiXqBUVAkTIIx41S6JdiyNKIJYhlbW8HdDGTXrURs7KHn-haTMHwy5eJX0Y5EJ2BeZlJ87gkiQ79IkkROG2sn-VZdqwyV3F1IG8vqrKo30lykSEktlfxN1Cgwb73rmviCudqyh5DWJc_Qo164ABr_Z_hORZ0"/>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="font-bold text-xl uppercase tracking-wider">RENOVLIES</h4>
+<p class="text-on-surface-variant text-sm">Naadloos glasvezelbehang voor een scheuroverbruggend en strak resultaat.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs tracking-widest uppercase group-hover:translate-x-2 transition-transform" href="#">
+                            MEER INFO <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FAQ -->
+<section class="py-32 bg-white px-8 md:px-16">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight text-center mb-16">VEELGESTELDE VRAGEN</h2>
+<div class="space-y-4">
+<details class="group border-b border-surface-container-high pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="text-lg font-bold uppercase tracking-wide">Hoe lang duurt het stucen van een woonkamer?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant leading-relaxed px-2">Gemiddeld duurt het aanbrengen van traditioneel stucwerk 2 tot 4 dagen, afhankelijk van de grootte en de staat van de muren. Houd rekening met een droogtijd van circa 1mm per dag.</p>
+</details>
+<details class="group border-b border-surface-container-high pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="text-lg font-bold uppercase tracking-wide">Wat is het verschil tussen raapwerk en pleisterwerk?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant leading-relaxed px-2">Raapwerk wordt gebruikt voor zeer scheve muren of muren met grote gaten (lagen van 7mm tot 5cm). Pleisterwerk is een dunnere afwerklaag bedoeld om wanden spiegelglad te maken.</p>
+</details>
+<details class="group border-b border-surface-container-high pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="text-lg font-bold uppercase tracking-wide">Moet ik de muren voorbereiden?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant leading-relaxed px-2">Wij vragen u enkel om de ruimte leeg te maken en kwetsbare spullen te verwijderen. Wij zorgen voor de voorstrijk, het afplakken en de complete reiniging na afloop.</p>
+</details>
+<details class="group border-b border-surface-container-high pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="text-lg font-bold uppercase tracking-wide">Is traditioneel stucwerk geschikt voor de badkamer?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant leading-relaxed px-2">Ja, mits er een cementgebonden stucmortel wordt gebruikt. Voor natte ruimtes adviseren wij vaak ook speciale waterdichte afwerkingen zoals betonciré.</p>
+</details>
+<details class="group border-b border-surface-container-high pb-4">
+<summary class="flex justify-between items-center cursor-pointer list-none py-4">
+<span class="text-lg font-bold uppercase tracking-wide">Wanneer kan ik de muren laten schilderen?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="text-on-surface-variant leading-relaxed px-2">De muren moeten volledig droog zijn. U herkent dit aan de egaal witte kleur. Gemiddeld adviseren wij om minimaal 2 weken te wachten bij standaard weersomstandigheden.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- 10. REVIEWS -->
+<section class="py-32 bg-surface px-8 md:px-16 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="text-4xl font-extrabold font-headline text-on-surface uppercase tracking-tight">TEVREDEN KLANTEN</h2>
+<p class="text-on-surface-variant mt-4">Bekijk wat anderen zeggen over ons stucwerk.</p>
+</div>
+<a class="text-primary font-bold uppercase tracking-widest text-sm border-b-2 border-primary pb-1" href="#">Bekijk alle reviews</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 space-y-4 border border-surface-container-high shadow-sm">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">VAKMANSCHAP PUUR SANG</p>
+<p class="text-on-surface-variant text-sm italic leading-relaxed">"Ongelofelijk hoe snel en netjes deze mannen werken. Alles werd keurig afgeplakt en het resultaat is verbluffend."</p>
+<p class="text-xs font-bold text-outline uppercase tracking-widest pt-4">— MARK VAN GELDER</p>
+</div>
+<div class="bg-white p-8 space-y-4 border border-surface-container-high shadow-sm">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">GOED ADVIES EN SERVICE</p>
+<p class="text-on-surface-variant text-sm italic leading-relaxed">"Wij wisten niet goed welke afwerking we wilden. Na een gratis inmeting kregen we eerlijk advies. Heel blij met het stucwerk!"</p>
+<p class="text-xs font-bold text-outline uppercase tracking-widest pt-4">— SOPHIE MULLER</p>
+</div>
+<div class="bg-white p-8 space-y-4 border border-surface-container-high shadow-sm">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-bold text-lg leading-tight uppercase">STRENG AAN AFSPRAAK</p>
+<p class="text-on-surface-variant text-sm italic leading-relaxed">"Komen op tijd, werken hard door en laten alles schoon achter. Precies wat je hoopt van een professioneel bedrijf."</p>
+<p class="text-xs font-bold text-outline uppercase tracking-widest pt-4">— JAN PIETERSEN</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. FINAL CTA -->
+<section class="py-32 bg-[#0b1628] text-white px-8 md:px-16 text-center relative">
+<div class="max-w-4xl mx-auto space-y-8 relative z-10">
+<h2 class="text-5xl md:text-6xl font-extrabold font-headline uppercase leading-none tracking-tighter">KLAAR VOOR PERFECT STUCWERK?</h2>
+<p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">Kies voor de kwaliteit van AfbouwZuid en geef uw woning de uitstraling die het verdient. Vraag vandaag nog een vrijblijvende offerte aan.</p>
+<div class="flex flex-wrap justify-center gap-6 pt-8">
+<button class="bg-primary text-white px-10 py-5 skew-btn hover:scale-105 transition-transform duration-300">
+<span class="skew-btn-content inline-block font-bold tracking-widest uppercase text-lg">START MIJN OFFERTE</span>
+</button>
+<button class="border border-white text-white px-10 py-5 skew-btn hover:bg-white hover:text-[#0b1628] transition-all duration-300">
+<span class="skew-btn-content inline-block font-bold tracking-widest uppercase text-lg">NEEM CONTACT OP</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/20 to-transparent"></div>
+</section>
+<!-- 12. FOOTER (Shared Component JSON Mapping) -->
+<footer class="w-full py-24 px-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-12 bg-[#0b1628] dark:bg-black text-[#fcf9f4]">
+<div class="space-y-6">
+<div class="text-2xl font-black text-white Manrope">AfbouwZuid</div>
+<p class="text-slate-400 text-sm leading-relaxed">Uw partner voor premium afbouwprojecten. Van traditioneel stucwerk tot moderne wandafwerking.</p>
+</div>
+<div class="space-y-4">
+<h5 class="uppercase font-bold tracking-widest text-white text-sm">Diensten</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Renovatie</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Nieuwbouw</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Vloeren</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Traditioneel Stucwerk</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="uppercase font-bold tracking-widest text-white text-sm">Bedrijf</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Contact</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Algemene Voorwaarden</a></li>
+<li><a class="text-slate-400 hover:text-white transition-transform hover:translate-x-1 inline-block" href="#">Projecten</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="uppercase font-bold tracking-widest text-white text-sm">Contact</h5>
+<div class="text-slate-400 text-sm space-y-2">
+<p>info@afbouwzuid.nl</p>
+<p>+31 (0) 40 123 4567</p>
+<p>Regio Eindhoven &amp; Omstreken</p>
+</div>
+<div class="flex space-x-4">
+<a class="text-white hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-white hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div class="md:col-span-4 border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 AfbouwZuid. Alle rechten voorbehouden.</p>
+<div class="flex space-x-6 uppercase font-bold tracking-widest">
+<a class="hover:text-white transition-colors" href="#">Instagram</a>
+<a class="hover:text-white transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-white transition-colors" href="#">Facebook</a>
+</div>
+</div>
+</footer>
+</body></html>
